@@ -1,0 +1,6 @@
+This is a log file to store my notes on the development of the code for this project. It consists of entries when changes were made to the codebase and when certain results were achieved.
+
+Wed May  2 10:50:21 IST 2018
+Intial commit. Reproducing Josephson results (current-phase) for N-channel with superconducting contacts. Adding a magnetic field to see the effects. Using a spin-orbit and Zeeman nanowire in 4x1 Nambu space.  
+I defined the Hamiltonian creation routines. The next step is to look at the spectrum. There were non-trivial issues when defining the spin orbit term for a cylindrical nanowire. Right now I used the form that is used (sigma_y p_z) that is used for 1D nanowires. The next step is to just look at the spectum for a long enough nanowire.
+
