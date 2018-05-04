@@ -4,3 +4,7 @@ Wed May  2 10:50:21 IST 2018
 Intial commit. Reproducing Josephson results (current-phase) for N-channel with superconducting contacts. Adding a magnetic field to see the effects. Using a spin-orbit and Zeeman nanowire in 4x1 Nambu space.  
 I defined the Hamiltonian creation routines. The next step is to look at the spectrum. There were non-trivial issues when defining the spin orbit term for a cylindrical nanowire. Right now I used the form that is used (sigma_y p_z) that is used for 1D nanowires. The next step is to just look at the spectum for a long enough nanowire.
 
+
+Fri May  4 11:06:41 IST 2018
+I wrote the dos code for cylidrical nanowire with flux. I need to spend time thinking about the discretisation and the convergence for B-fields.
+Surface dos test complete. I want to see a 2D plot of how the surface_dos looks like in mu-Delta space.
