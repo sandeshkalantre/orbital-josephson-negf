@@ -8,3 +8,11 @@ I defined the Hamiltonian creation routines. The next step is to look at the spe
 Fri May  4 11:06:41 IST 2018
 I wrote the dos code for cylidrical nanowire with flux. I need to spend time thinking about the discretisation and the convergence for B-fields.
 Surface dos test complete. I want to see a 2D plot of how the surface_dos looks like in mu-Delta space.
+
+Tue May 15 11:14:33 IST 2018
+I wrote the current-phase code for one-dim nanowire and observed the critical current as a function of mu. It goes to zero as the bands are depopulated.
+
+The next step is to repeat the same calculation for a wire with a finite cross-section without a magnetic field.
+Then introduce a magnetic field to see interference.
+
+
