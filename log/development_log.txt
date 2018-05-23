@@ -17,3 +17,29 @@ Then introduce a magnetic field to see interference.
 
 Wed May 23 11:06:29 IST 2018
 Oscillations observed in small lattice sizes. I am writing the separate l-subband model.
+
+I am doing a time-profiling of the code to find the RDS.
+calc_hamiltonian 
+- for small Hamiltonian (N_z,N_phi) = (2,5)  : 2 ms
+- for large Hamiltonian (N_z,N_phi) = (25,10): 550 ms
+- for verr large Hamiltonians (N_z,N_phi) = (100,15) : 17240 ms
+
+I will now fix to a (N_z,N_phi) = (2,5) value.
+calc_surface_g : E_vec = (-2e-3,2e-3,100) :  1100 ms
+87% of time spent in calculating the inverse for the next step in the iteration
+
+calc_sns_negf : E_vec = (-2e-3,2e-3,100) : 1950 ms 
+97.8% of time spent in calc_surface_g for left lead and right lead (close to 50 % for each)
+The left and right lead Hamiltonians have different Delta, so reuse is not possible
+
+dos-phi calculation : 100 phi points : 200 s
+This scaled perfectly from the single phi calculation
+
+I-phi calculation : 100 phi points : 193 s
+100 % of time in calc_sns_negf; scales as expected
+
+
+I-flux calculation : 100 flux points : 2.5 hrs (from on old simulation)
+This scaled properly from the single I-phi calculation. 
+
+No speedup is possible except at calc_sns_negf level or via parallelization
