@@ -15,4 +15,5 @@ I wrote the current-phase code for one-dim nanowire and observed the critical cu
 The next step is to repeat the same calculation for a wire with a finite cross-section without a magnetic field.
 Then introduce a magnetic field to see interference.
 
-
+Wed May 23 11:06:29 IST 2018
+Oscillations observed in small lattice sizes. I am writing the separate l-subband model.
