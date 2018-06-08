@@ -43,3 +43,8 @@ I-flux calculation : 100 flux points : 2.5 hrs (from on old simulation)
 This scaled properly from the single I-phi calculation. 
 
 No speedup is possible except at calc_sns_negf level or via parallelization
+
+Fri Jun  8 13:41:06 IST 2018
+The subband model results start to match with semi-classical theory results. I had to set l = 0 in the contacts to preserve the gap location.
+
+
