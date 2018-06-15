@@ -47,4 +47,8 @@ No speedup is possible except at calc_sns_negf level or via parallelization
 Fri Jun  8 13:41:06 IST 2018
 The subband model results start to match with semi-classical theory results. I had to set l = 0 in the contacts to preserve the gap location.
 
+Fri Jun 15 11:27:57 IST 2018
+The multiple subband oscillation period matches with the semi-classical results at low frequency.There are the following things to do:
 
+1. Fourier analysis, with multiple subbands
+2. Add disorder
