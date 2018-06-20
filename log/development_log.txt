@@ -52,3 +52,6 @@ The multiple subband oscillation period matches with the semi-classical results 
 
 1. Fourier analysis, with multiple subbands
 2. Add disorder
+
+Wed Jun 20 23:52:23 IST 2018
+I am looking at analytic results for the continuum current. It has extra nodes as a function of phase difference which are not reflected in NEGF calculations.
